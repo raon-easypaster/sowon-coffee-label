@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>소원커피라벨</title>
+    <meta name="description" content="소원커피 원두 라벨을 바로 편집하고 이미지로 저장하거나 인쇄하는 웹앱" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Bebas+Neue&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Noto Sans KR', sans-serif;
+        background-color: #f8f9fa;
+      }
+      @font-face {
+        font-family: 'SangsangTokki_Kkotgil';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/SangsangTokki_Kkotgil.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'Luna';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105@1.1/Luna.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'Scenic';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105@1.1/Scenic.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'NeverSayGoodbye';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/NeverSayGoodbye.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'Artrick';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Artrick-Bold.woff2') format('woff2');
+        font-weight: bold;
+        font-style: normal;
+      }
+      .font-artrick {
+        font-family: 'Artrick', sans-serif;
+      }
+      .font-never-say-goodbye {
+        font-family: 'NeverSayGoodbye', cursive;
+      }
+      .font-scenic {
+        font-family: 'Scenic', sans-serif;
+      }
+      .font-luna {
+        font-family: 'Luna', sans-serif;
+      }
+      .font-kkotgil {
+        font-family: 'SangsangTokki_Kkotgil', cursive;
+      }
+      .font-serif-elegant {
+        font-family: 'Playfair Display', serif;
+      }
+      .font-montserrat {
+        font-family: 'Montserrat', sans-serif;
+      }
+      .print-only {
+        display: none;
+      }
+      @media print {
+        @page {
+          size: 1125px 750px;
+          margin: 0;
+        }
+        html, body {
+          background: #ffffff !important;
+          margin: 0;
+          padding: 0;
+        }
+        .no-print {
+          display: none !important;
+        }
+        .print-only {
+          display: block !important;
+          width: 1125px;
+          height: 750px;
+          overflow: hidden;
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+      }
+    </style>
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
