@@ -80,7 +80,7 @@ const PreviewCard: React.FC<PreviewCardProps> = ({ info }) => {
             {/* Map Background Overlay */}
             {selectedCountries.length === 1 && selectedCountries[0].mapUrl && (
               <img 
-                src={`${selectedCountries[0].mapUrl}?t=${Date.now()}`} 
+                src={selectedCountries[0].mapUrl} 
                 alt="map" 
                 className="absolute right-[-10%] top-[-10%] w-[160px] h-[160px] object-contain opacity-30 mix-blend-overlay grayscale brightness-150"
                 crossOrigin="anonymous"

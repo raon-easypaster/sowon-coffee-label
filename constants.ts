@@ -5,56 +5,56 @@ export const COUNTRIES: CountryOption[] = [
   { 
     id: 'colombia', 
     name: 'Colombia', 
-    mapUrl: 'https://upload.wikimedia.org/wikipedia/commons/f/f1/Flag-map_of_Colombia.svg',
+    mapUrl: `${import.meta.env.BASE_URL}maps/Colombia.svg`,
     flagUrl: 'https://flagcdn.com/w320/co.png',
     colors: ['#FCD116', '#003893', '#CE1126']
   },
   { 
     id: 'ethiopia', 
     name: 'Ethiopia', 
-    mapUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/15/Flag-map_of_Ethiopia.svg',
+    mapUrl: `${import.meta.env.BASE_URL}maps/Ethiopia.svg`,
     flagUrl: 'https://flagcdn.com/w320/et.png',
     colors: ['#078930', '#FCD116', '#CE1126']
   },
   { 
     id: 'brazil', 
     name: 'Brazil', 
-    mapUrl: 'https://upload.wikimedia.org/wikipedia/commons/0/05/Flag-map_of_Brazil.svg',
+    mapUrl: `${import.meta.env.BASE_URL}maps/Brazil.svg`,
     flagUrl: 'https://flagcdn.com/w320/br.png',
     colors: ['#009739', '#FEDD00', '#012169']
   },
   { 
     id: 'guatemala', 
     name: 'Guatemala', 
-    mapUrl: 'https://upload.wikimedia.org/wikipedia/commons/2/25/Flag-map_of_Guatemala.svg',
+    mapUrl: `${import.meta.env.BASE_URL}maps/Guatemala.svg`,
     flagUrl: 'https://flagcdn.com/w320/gt.png',
     colors: ['#4997D0', '#FFFFFF', '#4997D0']
   },
   { 
     id: 'kenya', 
     name: 'Kenya', 
-    mapUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/11/Flag-map_of_Kenya.svg',
+    mapUrl: `${import.meta.env.BASE_URL}maps/Kenya.svg`,
     flagUrl: 'https://flagcdn.com/w320/ke.png',
     colors: ['#000000', '#BB0000', '#006600']
   },
   { 
     id: 'indonesia', 
     name: 'Indonesia', 
-    mapUrl: 'https://upload.wikimedia.org/wikipedia/commons/c/c5/Flag-map_of_Indonesia.svg',
+    mapUrl: `${import.meta.env.BASE_URL}maps/Indonesia.svg`,
     flagUrl: 'https://flagcdn.com/w320/id.png',
     colors: ['#CE1126', '#FFFFFF']
   },
   { 
     id: 'costarica', 
     name: 'Costa Rica', 
-    mapUrl: 'https://upload.wikimedia.org/wikipedia/commons/0/07/Flag-map_of_Costa_Rica.svg',
+    mapUrl: '',
     flagUrl: 'https://flagcdn.com/w320/cr.png',
     colors: ['#002B7F', '#FFFFFF', '#CE1126']
   },
   { 
     id: 'vietnam', 
     name: 'Vietnam', 
-    mapUrl: 'https://upload.wikimedia.org/wikipedia/commons/7/7e/Flag-map_of_Vietnam.svg',
+    mapUrl: `${import.meta.env.BASE_URL}maps/Vietnam.svg`,
     flagUrl: 'https://flagcdn.com/w320/vn.png',
     colors: ['#DA251D', '#FFFF00']
   },

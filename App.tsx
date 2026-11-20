@@ -244,6 +244,8 @@ const App: React.FC = () => {
         width: 1125,
         height: 750,
         cacheBust: true,
+        // 그림 하나가 깨져도 이미지 저장 전체가 실패하지 않도록 투명 그림으로 대신 채움
+        imagePlaceholder: 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
         style: {
           transform: 'scale(1)',
           transformOrigin: 'top left',
